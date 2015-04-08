@@ -57,6 +57,7 @@ add_import_path "partials"
 # Add importing paths to use vendor's partials that reside outside
 # this directory.
 # add_import_path '../../path/to/other/project'
+add_import_path '../bower_components/unsemantic/assets/sass'
 
 # Require any additional compass plugins available globally.
 require 'sass-globbing'

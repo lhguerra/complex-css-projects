@@ -1,0 +1,19 @@
+{
+  "name": "complex-css-projects",
+  "version": "0.0.0",
+  "homepage": "https://github.com/lhguerra/complex-css-projects",
+  "authors": [
+    "wlsf82 <wlsf82@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "unsemantic": "~1.0.2"
+  }
+}

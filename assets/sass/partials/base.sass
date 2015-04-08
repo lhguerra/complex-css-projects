@@ -1,33 +1,28 @@
-// Basic theme styles.
+/**
+ * Basic theme styles.
+ */
 
 *
 	box-sizing: border-box
 
 body
-	padding: 0
-	margin: 0
-	font-size: 16px
-	font-family: Verdana, sans-serif
+	@extend %grid-container
 
 	> header
-		background: gray
-		color: white
+		@extend %grid-100
 		padding: 20px
-		font-size: 3rem
+		background-color: gray
 
 section
-	width: 60%
-	float: left
-	background: yellow
+	@extend %grid-60
 	padding: 20px
+	background-color: yellow
 
 aside
-	width: 40%
-	float: left
+	@extend %grid-40
 	padding: 20px
 
 footer
-	clear: both
-	background: black
-	color: white
+	@extend %grid-100
 	padding: 20px
+	background-color: green
