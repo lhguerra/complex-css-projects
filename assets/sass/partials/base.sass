@@ -3,26 +3,46 @@
  */
 
 *
-	box-sizing: border-box
+  box-sizing: border-box
 
 body
-	@extend %grid-container
+  @extend .row
 
-	> header
-		@extend %grid-100
-		padding: 20px
-		background-color: gray
+  > header
+    @extend %grid-100
+    padding: 20px
+    background-color: gray
 
 section
-	@extend %grid-60
-	padding: 20px
-	background-color: yellow
+  @extend %grid-60
+  padding: 20px
+  background-color: yellow
 
 aside
-	@extend %grid-40
-	padding: 20px
+  @extend %grid-40
+  padding: 20px
 
 footer
-	@extend %grid-100
-	padding: 20px
-	background-color: green
+  @extend %grid-100
+  padding: 20px
+  background-color: green
+
+%foundation-example
+  padding-bottom: 5rem
+  list-style: none
+  li
+    background-color: $primary-color
+    text-align: center
+    line-height: 5em
+    font-weight: bold
+    color: white
+    &:nth-child(odd)
+      opacity: 0.8
+
+.foundation-example
+  +columns(4, 6)
+  @extend %foundation-example
+
+.foundation-example-2
+  +columns-translate(few)
+  @extend %foundation-example
