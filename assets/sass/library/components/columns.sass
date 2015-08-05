@@ -1,0 +1,13 @@
+// General columns classes aplication.
+=columns($large, $small)
+  @extend .row
+  > *
+    @extend .column
+    @extend .large-#{$large}
+    @extend .small-#{$small}
+
+=columns-translate($how-much)
+  @if $how-much == many
+    +columns(3, 4)
+  @else if $how-much == few
+    +columns(6, 12)
